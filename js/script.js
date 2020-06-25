@@ -8,7 +8,9 @@ $(document).ready(
   function(){
 
     // Creare una Griglia 6x6.
-    for(var i = 0; i < 36; i++){
+    var griglia = parseInt(6*6);
+
+    for(var i = 0; i < griglia; i++){
       var template = $('.template').find('.box').clone();
       $('.wrapper').append(template);
     }
@@ -38,7 +40,7 @@ $(document).ready(
 
           },
           error: function(richiesta, stato, errore){
-              alert('ERROR')
+              alert('ERROR');
           }
         }
       );
