@@ -36,3 +36,6 @@ body {
 .green {
   background: green;
 }
+.hidden {
+  display: none;
+}
